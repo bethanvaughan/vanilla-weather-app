@@ -29,6 +29,9 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+#active a:hover {
+  color: purple;
+}
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
@@ -60,4 +63,14 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -32px;
+}
+
+.weather-temperature .lin {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+
+.weather-temperature .lin:hover {
+  text-decoration: none;
 }
