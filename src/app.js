@@ -22,6 +22,12 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+
+function displayForecast(){
+    let forecastElement = document.querySelector("#forecast");
+    forecastElement.innerHTML= "hi";
+}
+
 function displayTemperature(response) {
   let temmperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -86,3 +92,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 search("London");
+
