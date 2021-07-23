@@ -25,7 +25,38 @@ function formatDate(timestamp) {
 
 function displayForecast(){
     let forecastElement = document.querySelector("#forecast");
-    forecastElement.innerHTML= "hi";
+
+let forecastHTML = "Hello";
+forecastHTML = forecastHTML + `
+    <div class="row"> 
+<div class="col-2"> 
+<div class="weather-forecast-date"> 
+Friday
+</div>
+<img src="http://openweathermap.org/img/wn/01n@2x.png" width="36"/>
+
+<div class="forecast-temperature"> 
+  12, 18
+</div>
+ </div> 
+</div>  
+    `;
+forecastElement.innerHTML = forecastHTML;
+
+    forecastElement.innerHTML= `
+    <div class="row"> 
+<div class="col-2"> 
+<div class="weather-forecast-date"> 
+Friday
+</div>
+<img src="http://openweathermap.org/img/wn/01n@2x.png" width="36"/>
+
+<div class="forecast-temperature"> 
+  12, 18
+</div>
+ </div> 
+</div>  
+    `;
 }
 
 function displayTemperature(response) {
@@ -92,4 +123,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 search("London");
+displayForecast();
 
