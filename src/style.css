@@ -57,7 +57,7 @@ a{
   margin: 30px auto;
   font-family: 'Libre Baskerville', serif;
   color: white;
-  background-image: url("https://images.pexels.com/photos/3724019/pexels-photo-3724019.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500")
+  background-image: url("https://images.pexels.com/photos/1214000/pexels-photo-1214000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
   
   
 }
@@ -66,7 +66,7 @@ a{
   margin: 30px auto;
   padding: 50px;
   border: 1px solid rgb(135, 135, 135);
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .overview {
@@ -112,6 +112,10 @@ a{
 
 .forecast-temperature{
   text-align:center;
+}
+
+.end-note{
+  text-align: center;
 }
 
 
