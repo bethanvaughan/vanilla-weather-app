@@ -35,7 +35,6 @@ return days[day];
 function displayForecast(response) {
 let forecast = response.data.daily;
 
-
 let forecastElement = document.querySelector("#forecast");
 
 let forecastHTML = `<div class="row">`;
@@ -50,7 +49,7 @@ ${formatDay(forecastDay.dt)}
 <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" width="36"/>
 
 <div class="forecast-temperature"> 
-  ${Math.round(forecastDay.temp.max)}° ${Math.round(forecastDay.temp.min)}°
+  ${Math.round(forecastDay.temp.max)}° / ${Math.round(forecastDay.temp.min)}°
 </div>
  </div> 
 </div>  
