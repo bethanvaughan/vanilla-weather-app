@@ -25,7 +25,7 @@ function formatDate(timestamp) {
 function formatDay(timestamp){
 let date = new Date(timestamp *1000);
 let day = date.getDay();
-let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 return days[day]; 
 
@@ -51,7 +51,7 @@ ${formatDay(forecastDay.dt)}
 <div class="forecast-temperature"> 
   ${Math.round(forecastDay.temp.max)}° / ${Math.round(forecastDay.temp.min)}°
 </div>
- </div> 
+  
 </div>  
     `; }
 })

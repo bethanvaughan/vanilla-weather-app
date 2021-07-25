@@ -38,12 +38,15 @@ li:first-letter {
 
 #temperature:hover{
   background: white;
+  opacity: 0.3;
   color: black;
   border-radius: 25px 25px 25px 25px;
   padding: 4px;
   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
   transition: all 250ms ease-in-out;
+  padding-bottom: 1px;
 }
+
 
 a{
   color:purple;
@@ -103,6 +106,8 @@ a{
 .weather-forecast{
   margin-top: 30px;
   text-align: center; 
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .weather-forecast-date{
@@ -116,6 +121,9 @@ a{
 
 .end-note{
   text-align: center;
+  font-size: 17px;
+  padding-bottom: 20px;
+  padding-top: -5px;
 }
 
 
